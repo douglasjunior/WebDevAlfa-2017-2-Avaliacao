@@ -6,13 +6,9 @@ Avaliação da disciplina de **Desenvolvimento de Aplicações Híbridas**.
 
 Utilizando a tecnologia móvel cross-platform React Native, desenvolva um App que exiba os estabelecimentos próximos à localização do usuário utilizando a API do Google Places.
 
-O App deve ter uma tela inicial onde o usuário possa pesquisar o nome de um estabalecimento próximo à sua localização. Caso o usuário não digite nada, exiba os 10 primeiros mais próximos.
+O App deve ter uma tela inicial onde o usuário possa pesquisar o nome de um estabalecimento próximo à sua localização. Na tela inicial deve existir um campo de busca, um botão para buscar e a lista de resultados. A listagem deve exibir o nome do estabalecimento, a foto principal em miniatura e o endreço formatado.
 
-Ao clicar em um estabalecimento da lista, uma janela com informações detalhadas do estabelecimento deve ser exibida.
-
-Na tela inicial deve existir um campo de busca, um botão para buscar e a lista de resultados. A listagem inicial deve exibir o nome do estabalecimento, a foto principal em miniatura e o endreço formatado.
-
-Na janela de detalhes, devem ser exibidos o nome do estabelecimento, foto ampliada, endereço, números de telefone, pontuação (rating) e localização no mapa (pode ser utilizado o mapa estático como imagem).
+Ao clicar em um estabalecimento da lista, uma janela com informações detalhadas do estabelecimento deve ser exibida. Na janela de detalhes devem ser exibidos o nome do estabelecimento, a foto ampliada, endereço, números de telefone, pontuação (rating) e localização no mapa (utilizando mapa estático como imagem).
 
 Para iniciar, você pode efetuar o Fork deste projeto, ou criar seu próprio projeto utilizando o comando `react-native init <nome-projeto>`.
 
@@ -77,7 +73,7 @@ O Google Places é uma API que permite ter acesso ao mesmo banco de dados usado 
 
 ## Obtendo a chave da API
 
-Para poder ter acesso ao Google Places, você precisa obter uma chave de autenticação disponitilizada no próprio portal de desenvolvedor do Google.
+Para poder ter acesso ao Google Places, você precisa obter uma chave de autenticação disponitilizada gratuitamente no próprio portal de desenvolvedores do Google.
 
 1. Acesse o [portal do Google Places](https://developers.google.com/places/web-service/?hl=pt-br) e clique em **Obter uma Chave** no canto superior direito.
 
@@ -89,7 +85,7 @@ _[Saiba mais sobre a obtenção da chave.](https://developers.google.com/places/
 
 ## Utilizando o Google Places
 
-Para esta avaliação, todas as chamadas são realizadas via `HTTP GET` e o retorno será(ão) objeto(s) `JSON`.
+Para esta avaliação, todas as chamadas são realizadas via `HTTP GET` e o retorno será(ão) objeto(s) `JSON` na maioria dos casos.
 
 ### Buscando os Locais próximos ao usuário
 
@@ -230,6 +226,8 @@ Neste exemplo são utilizados quatro parâmetros:
 | `zoom` | Define o nível de zoom do mapa, o que determina o nível de expansão do mapa.  | 16 |
 | `size` | Define as dimensões retangulares da imagem do mapa. Esse parâmetro comporta uma string no formato {horizontal_value}x{vertical_value} | 600x300 |
 | `key` | A chave de API do aplicativo. Essa chave identifica o aplicativo para fins de gerenciamento de cotas e de forma que locais adicionados a partir dele sejam imediatamente disponibilizados para o aplicativo.  | AIzaSyB77R2dTnOzoDrWpO0FHnwzDQJKd4faPD9 |
+
+O retorno desta requisição é o arquivo de imagem correspondente ao mapa solicitado.
 
 _[Saiba mais sobre o Static Maps.](https://developers.google.com/maps/documentation/static-maps/intro?hl=pt-br)_
 
