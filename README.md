@@ -12,9 +12,13 @@ Ao clicar em um estabalecimento da lista, uma janela com informações detalhada
 
 Para iniciar, você pode efetuar o Fork deste projeto, ou criar seu próprio projeto utilizando o comando `react-native init <nome-projeto>`.
 
+Veja o [vídeo de demonstração](https://raw.githubusercontent.com/douglasjunior/WebDevAlfa-2017-2-Avaliacao/master/demo.mp4).
+
 # Entrega
 
-O projeto final deverá ser entregue via GitHub, sendo que o aluno deverá me enviar por e-mail o Link do projeto até **16 de setembro de 2017**.
+O projeto final deverá ser entregue via GitHub, sendo que o aluno deverá me enviar por e-mail o Link do projeto até **23 de setembro de 2017** às **23h59m**.
+
+Descreva no e-mail para qual plataforma (Android/iOS) o projeto foi testado, apenas uma é suficiente.
 
 _Não esqueça de assinar o e-mail com o seu nome completo._
 
@@ -230,4 +234,3 @@ Neste exemplo são utilizados quatro parâmetros:
 O retorno desta requisição é o arquivo de imagem correspondente ao mapa solicitado.
 
 _[Saiba mais sobre o Static Maps.](https://developers.google.com/maps/documentation/static-maps/intro?hl=pt-br)_
-
